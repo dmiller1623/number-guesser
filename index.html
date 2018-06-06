@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Guesser</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <header>
+    <h1>Number <span>Guesser</span></h1>  
+  </header>
+  <main>
+    <form class ="box">
+        <input class ="min-Range" type="number" name="min" placeholder="min">
+        <label for ="min-Range"></label>
+        <input class ="max-Range" type="number" name="max" placeholder="Max">
+        <label for ="max-Range"></label>
+      <h3 class ="guess-text">On Win Add 10 To Max and Subtract 10 from Min Then Re-Adjust</h3> 
+        <br>
+        <button class = "min-Max" type ="button">Adjust Min and Max</button>
+    </form> 
+    <form class= "box">
+      <div>
+        <input class ="playerGuessInput" type ="text" name="number" placeholder ="Guess a Number Between your Min and Max">
+        <label for ="guess"></label>
+      </div> 
+      <div class ="cool">
+        <button id ="guessSubmitButton" class="guess-button" disabled ="true">Guess</button>
+        <button id ="clear" type ="reset" disabled ="true" value = "Clear">Clear</button>
+      </div>
+    </form>
+    <h2 class ="yourLastGuess">Your Last Guess Was</h2>
+    <div class ="guess-text"></div>
+    <h2 class ="displayTwo"></h2>
+    <h2 class ="number-Range"></h2>
+    <form class = "box">
+      <input id ="resetButton" type="reset" name="reset" disabled= "true">
+      <label for ="resetButton" value ="New Game"></label>
+    </form>
+  </main>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
